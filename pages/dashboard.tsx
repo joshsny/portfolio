@@ -34,7 +34,7 @@ export default function Dashboard() {
           <GitHub />
         </div>
         <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
-          <Newsletter />
+          {/* <Newsletter /> */}
         </div>
         <h2 className="mt-16 mb-4 text-3xl font-bold tracking-tight text-black dark:text-white">
           Top Tracks

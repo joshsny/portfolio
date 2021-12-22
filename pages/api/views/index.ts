@@ -1,5 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
 import prisma from 'lib/prisma';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(
   req: NextApiRequest,
@@ -11,6 +11,8 @@ export default async function handler(
         count: true
       }
     });
+
+    console.log(totalViews);
 
     return res.status(200).json({ total: totalViews._sum.count.toString() });
   } catch (e) {
