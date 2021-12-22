@@ -43,8 +43,8 @@ export default function About() {
         <Timeline />
         <iframe
           height="280"
-          src="https://www.google.com/maps/d/embed?mid=1QOGi-u8d4vwoQ4vC4zQjKxrSfsDIQdOK&hl=en"
-          title="Lee's Travel Map"
+          src="https://www.google.com/maps/d/embed?mid=1yc5xH_3pGHxryRC4yS_oGokmJviO4ybC&hl=en"
+          title="Travel Map"
           width="100%"
         />
       </div>
