@@ -9,19 +9,25 @@ import VideoCard from '../components/VideoCard';
 export default function Home({ videos }) {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
-        <div className="flex flex-col-reverse sm:flex-row items-start">
+      <div className="flex flex-col items-start justify-center max-w-2xl pb-16 mx-auto border-gray-200 dark:border-gray-700">
+        <div className="flex flex-col-reverse items-start sm:flex-row">
           <div className="flex flex-col pr-8">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+            <h1 className="mb-1 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
               Joshua Snyder
             </h1>
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-              Director of Developer Relations at{' '}
-              <span className="font-semibold">Vercel</span>
+            <h2 className="mb-4 text-gray-700 dark:text-gray-200">
+              Chief Technology Officer at{' '}
+              <a
+                className="font-semibold"
+                href="https://timenavi.com"
+                style={{ color: '#1ba41b' }}
+              >
+                TimeNavi
+              </a>
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Helping developers build a faster web. Teaching about web
-              development, serverless, and React / Next.js.
+            <p className="mb-16 text-gray-600 dark:text-gray-400">
+              Web3 and Typescript enthusiast 💙 Learning to build software that
+              people actually need 🔨
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -29,15 +35,15 @@ export default function Home({ videos }) {
               alt="Joshua Snyder"
               height={176}
               width={176}
-              src="/avatar.jpg"
-              className="rounded-full filter grayscale"
+              src="/avatar.png"
+              className="rounded-full"
             />
           </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+        <h3 className="mb-6 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Featured Posts
         </h3>
-        <div className="flex gap-6 flex-col md:flex-row">
+        <div className="flex flex-col gap-6 md:flex-row">
           <BlogPostCard
             title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
             slug="style-guides-component-libraries-design-systems"
@@ -55,13 +61,13 @@ export default function Home({ videos }) {
           />
         </div>
         <Link href="/blog">
-          <a className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
+          <a className="flex h-6 mt-8 leading-7 text-gray-600 transition-all rounded-lg dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">
             Read all posts
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              className="h-6 w-6 ml-1"
+              className="w-6 h-6 ml-1"
             >
               <path
                 stroke="currentColor"
@@ -73,10 +79,10 @@ export default function Home({ videos }) {
             </svg>
           </a>
         </Link>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+        <h3 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Learn React & Next.js
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
+        <p className="mb-4 text-gray-600 dark:text-gray-400">
           Build and deploy a modern SaaS application using the most popular
           open-source software. This course is 12 hours long and is completely
           live streamed.
@@ -109,14 +115,14 @@ export default function Home({ videos }) {
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.youtube.com/playlist?list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1"
-          className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
+          className="flex h-6 mt-8 leading-7 text-gray-600 transition-all rounded-lg dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
         >
           Watch all videos
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            className="h-6 w-6 ml-1"
+            className="w-6 h-6 ml-1"
           >
             <path
               stroke="currentColor"
