@@ -134,7 +134,7 @@ export default function Home({ videos }) {
           </svg>
         </a> */}
         <span className="h-16" />
-        <Subscribe />
+        {/* <Subscribe /> */}
       </div>
     </Container>
   );
