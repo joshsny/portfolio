@@ -26,7 +26,7 @@ export default function Tweets({ tweets }) {
 }
 
 export async function getStaticProps() {
-  const tweets = await getTweets(['1390415144396673024']);
+  const tweets = await getTweets([]);
 
   return { props: { tweets } };
 }
