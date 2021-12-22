@@ -12,6 +12,8 @@ export default async function handler(
   });
   const data = await result.json();
 
+  console.log(data);
+
   if (!result.ok) {
     return res.status(500).json({ error: 'Error retrieving subscribers' });
   }
