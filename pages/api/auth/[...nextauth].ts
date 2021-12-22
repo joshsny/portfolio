@@ -20,7 +20,6 @@ export default NextAuth({
       profile?: Profile;
       isNewUser?: boolean;
     }) => {
-      console.log(params.user, params.account);
       return params.token;
     }
   }
