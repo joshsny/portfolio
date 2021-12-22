@@ -6,43 +6,38 @@ import Container from 'components/Container';
 export default function About() {
   return (
     <Container title="About – Joshua Snyder">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+      <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           About Me
         </h1>
-        <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
+        <div className="mb-8 leading-6 prose text-gray-600 dark:text-gray-400">
           <p>
-            Hey, I’m Lee. I'm a developer, writer, and the creator of&nbsp;
-            <a
-              href="https://masteringnextjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Mastering Next.js
-            </a>
-            &nbsp;and&nbsp;
-            <a
-              href="https://react2025.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React 2025.
-            </a>
-            &nbsp;I work at ▲Vercel as the Director of Developer Relations.
+            Hey, I’m Joshua. I'm a developer, freelancer, and the creator
+            of&nbsp;
+            <span className="font-bold no-underline">
+              <a
+                href="https://timenavi.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#1ba41b' }}
+              >
+                TimeNavi
+              </a>
+            </span>
+            .
           </p>
           <p>
-            I’ve spoken across the country at conferences and meet-ups about
-            front-end development, design, and recruiting. I write about
-            development, tech careers, and my personal life on&nbsp;
+            I write about Web3 and the future of the web in&nbsp;
             <Link href="/newsletter">
               <a>my newsletter.</a>
             </Link>
           </p>
           <p>
-            I grew up in small-town Iowa and went to school at Iowa State,
-            graduating with a degree in Computer Engineering. I spend my free
-            time playing music, creating videos, and enjoying time with friends
-            and family in Des Moines, IA.
+            I grew up in a rural village in the Lake District, the most
+            beautiful part of England. I studied Maths at the University of
+            Cambridge, graduating with an MMath. I spend my free time
+            contributing to open source, swimming and enjoying time with friends
+            and family.
           </p>
         </div>
         <Timeline />
