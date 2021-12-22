@@ -17,14 +17,14 @@ export default function Blog({
   return (
     <Container
       title="Blog – Joshua Snyder"
-      description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
+      description="Thoughts on Web3 and the future of the web."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
+          {`I started writing at the beginning of 2022, mostly about Web3 and the future of the web.
             In total, I've written ${posts.length} articles on my blog.
             Use the search below to filter by title.`}
         </p>
@@ -57,19 +57,9 @@ export default function Blog({
               Most Popular
             </h3>
             <BlogPost
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-              slug="style-guides-component-libraries-design-systems"
-            />
-            <BlogPost
-              title="How Stripe Designs Beautiful Websites"
-              summary="Examining the tips and tricks used to make Stripe's website design a notch above the rest."
-              slug="how-stripe-designs-beautiful-websites"
-            />
-            <BlogPost
-              title="Creating a Monorepo with Lerna & Yarn Workspaces"
-              summary="In this guide, you will learn how to create a Monorepo to manage multiple packages with a shared build, test, and release process."
-              slug="monorepo-lerna-yarn-workspaces"
+              title="2021 Year in review"
+              summary="Highlights and reflections on 2021 and a look forward to 2022."
+              slug="2021-year-in-review"
             />
           </>
         )}

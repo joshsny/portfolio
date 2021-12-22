@@ -79,7 +79,7 @@ export default function Home({ videos }) {
             </svg>
           </a>
         </Link>
-        <h3 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+        {/* <h3 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
           Learn React & Next.js
         </h3>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
@@ -132,7 +132,7 @@ export default function Home({ videos }) {
               d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
             />
           </svg>
-        </a>
+        </a> */}
         <span className="h-16" />
         <Subscribe />
       </div>

@@ -18,15 +18,8 @@ export default function Dashboard() {
         </h1>
         <div className="mb-8">
           <p className="mb-4 text-gray-600 dark:text-gray-400">
-            This is my personal dashboard, built with Next.js API routes
-            deployed as serverless functions. I use this dashboard to track
-            various metrics across platforms like Unsplash, YouTube, GitHub, and
-            more. Want to build your own? Check out my&nbsp;
-            <Link href="/blog/fetching-data-with-swr">
-              <a className="text-gray-900 underline dark:text-gray-100">
-                blog series.
-              </a>
-            </Link>
+            This is my personal dashboard. I use this dashboard to track various
+            metrics for the projects I am undertaking.
           </p>
         </div>
         <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
