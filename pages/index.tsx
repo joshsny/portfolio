@@ -45,17 +45,17 @@ export default function Home({ videos }) {
         </h3>
         <div className="flex flex-col gap-6 md:flex-row">
           <BlogPostCard
-            title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
+            title="Blog Post 1"
             slug="style-guides-component-libraries-design-systems"
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
           <BlogPostCard
-            title="Rust Is The Future of JavaScript Infrastructure"
+            title="Blog Post 2"
             slug="rust"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
           <BlogPostCard
-            title="Past, Present, and Future of React State Management"
+            title="Blog Post 3"
             slug="react-state-management"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />

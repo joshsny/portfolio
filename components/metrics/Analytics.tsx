@@ -12,7 +12,7 @@ export default function AnalyticsCard() {
 
   return (
     <MetricCard
-      header="All-Time Views"
+      header="Blog Readers"
       link={link}
       metric={pageViews}
       isCurrency={false}

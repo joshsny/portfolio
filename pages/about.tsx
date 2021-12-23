@@ -35,9 +35,11 @@ export default function About() {
           <p>
             I grew up in a rural village in the Lake District, the most
             beautiful part of England. I studied Maths at the University of
-            Cambridge, graduating with an MMath. I spend my free time
-            contributing to open source, swimming and enjoying time with friends
-            and family.
+            Cambridge, graduating with an MMath.
+          </p>
+          <p>
+            I spend my free time contributing to open source, swimming and
+            enjoying time with friends and family.
           </p>
         </div>
         <div className="mb-8">
