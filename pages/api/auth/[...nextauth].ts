@@ -9,7 +9,7 @@ export default NextAuth({
       clientId: process.env.SPOTIFY_CLIENT_ID,
       clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
       authorization:
-        'https://accounts.spotify.com/authorize?scope=user-read-email,user-read-playback-position,user-top-read,user-read-recently-played'
+        'https://accounts.spotify.com/authorize?scope=user-read-email,user-read-playback-position,user-top-read,user-read-recently-played,user-read-currently-playing'
     })
   ],
   callbacks: {

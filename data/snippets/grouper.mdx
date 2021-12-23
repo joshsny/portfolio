@@ -1,0 +1,30 @@
+---
+title: 'Grouper'
+description: 'Easily group objects in an array type-safely.'
+logo: 'javascript.png'
+---
+
+This is helpful if you need to group objects in an array efficiently, whilst keeping everything type-safe.
+
+```tsx
+const groupBy = <O,>(array: O[], grouper: (_obj: O) => string[]) => {
+  const result = array.reduce(function (res, _obj) {
+    const groups = grouper(_obj);
+
+    for (const group of groups) {
+      if (!res[group]) {
+        res[group] = [];
+      }
+
+      res[group].push(_obj);
+    }
+
+    return res;
+  }, {} as { [key: string]: O[] });
+
+  return Object.keys(result).map((group) => ({
+    key: group,
+    objects: result[group]
+  }));
+};
+```

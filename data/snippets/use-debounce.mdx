@@ -1,0 +1,35 @@
+---
+title: 'useDebounce()'
+description: 'Reduce the amount of calls to a search API.'
+logo: 'react.png'
+---
+
+This is helpful if you need to call an API as a user is typing, and you don't want to make too many calls.
+
+```tsx
+import { RefObject, useEffect } from 'react';
+
+export default function useOnClickOutside<T extends HTMLElement = HTMLElement>(
+  refs: RefObject<T>[],
+  handler: (event: MouseEvent) => void
+) {
+  useEffect(() => {
+    const listener = (event: Event) => {
+      if (
+        refs.find(
+          (ref) => ref.current && ref.current.contains(event.target as Node)
+        )
+      ) {
+        return;
+      }
+      handler(event as unknown as MouseEvent);
+    };
+    document.addEventListener('mousedown', listener);
+    document.addEventListener('touchstart', listener);
+    return () => {
+      document.removeEventListener('mousedown', listener);
+      document.removeEventListener('touchstart', listener);
+    };
+  }, [refs, handler]);
+}
+```

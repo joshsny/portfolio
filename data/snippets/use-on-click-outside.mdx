@@ -1,0 +1,38 @@
+---
+title: 'useOnClickOutside()'
+description: 'Run a function when a user clicks outside an array of refs.'
+logo: 'react.png'
+---
+
+This is helpful if you need to close a modal or dropdown menu when the user clicks outside of it or on the button that triggered it. Most examples online don't handle passing an array of refs rather than a single ref.
+
+```tsx
+import { RefObject, useEffect } from 'react';
+
+type Handler = (event: MouseEvent) => void;
+
+export default function useOnClickOutside<T extends HTMLElement = HTMLElement>(
+  refs: RefObject<T>[],
+  handler: Handler
+) {
+  useEffect(() => {
+    const listener = (event: Event) => {
+      // Do nothing if clicking on one of refs' element or descendent elements
+      if (
+        refs.find(
+          (ref) => ref.current && ref.current.contains(event.target as Node)
+        )
+      ) {
+        return;
+      }
+      handler(event as unknown as MouseEvent);
+    };
+    document.addEventListener('mousedown', listener);
+    document.addEventListener('touchstart', listener);
+    return () => {
+      document.removeEventListener('mousedown', listener);
+      document.removeEventListener('touchstart', listener);
+    };
+  }, [refs, handler]);
+}
+```
