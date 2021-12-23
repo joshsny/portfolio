@@ -40,7 +40,9 @@ export default function About() {
             and family.
           </p>
         </div>
-        <Timeline />
+        <div className="mb-8">
+          <Timeline />
+        </div>
         <iframe
           height="280"
           src="https://www.google.com/maps/d/embed?mid=1yc5xH_3pGHxryRC4yS_oGokmJviO4ybC&hl=en"

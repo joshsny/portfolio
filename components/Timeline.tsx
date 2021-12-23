@@ -52,10 +52,18 @@ const FullTimeline = () => (
       </Step>
     </ul>
     <Divider />
+    <Year>2017</Year>
+    <ul>
+      <Step title="Went travelling 🏃‍♂️">
+        This was the year I went exploring. I travelled to many places in
+        Eastern Europe and South East Asia in particular.
+      </Step>
+    </ul>
+    <Divider />
     <Year>2016</Year>
     <ul>
       <Step title="Started University 🎓">
-        I started studying maths at the University of Cambridge
+        I started studying maths at the University of Cambridge.
       </Step>
       <Step title="Family Roadtrip 🚗">
         To celebrate finishing school, my Dad and I went on a road trip to Costa
@@ -97,19 +105,34 @@ export default function Timeline() {
       </h3>
       <Year>2021</Year>
       <ul>
+        <Step title="Started Freelancing 🧑‍💻">
+          In 2021 I started to take freelancing opportunities. I've enjoyed
+          working on other people's business ideas and helping them build their
+          businesses.
+        </Step>
+      </ul>
+      <ul>
         <Step title="Got Married 🥳">
-          Great year for a wedding, huh? We had a small ceremony with family and
-          it was better than I could have imagined.
+          Great year for a wedding, huh? We managed to get 40 of our family and
+          friends to the wedding and it was fantastic.
         </Step>
       </ul>
       <Divider />
       <Year>2020</Year>
       <ul>
-        <Step title="Graduated 🎓">
-          I graduated from my masters degree in the middle of the COVID-19
-          pandemic.
+        <Step title="Started working on TimeNavi full time ⏰">
+          After graduating, I started working on TimeNavi full time, joining my
+          girlfriend who had already started.
         </Step>
       </ul>
+      <ul>
+        <Step title="Graduated  🎓">
+          I graduated from my masters degree in the middle of the COVID-19
+          pandemic. It was a rough year, since I was unable to write for most of
+          it, but I got there in the end.
+        </Step>
+      </ul>
+
       {isShowingFullTimeline ? (
         <FullTimeline />
       ) : (
