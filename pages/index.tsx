@@ -45,8 +45,8 @@ export default function Home({ videos }) {
         </h3>
         <div className="flex flex-col gap-6 md:flex-row">
           <BlogPostCard
-            title="Blog Post 1"
-            slug="style-guides-component-libraries-design-systems"
+            title="2021 Year in Review - Reflections and goals for the coming year"
+            slug="2021-year-in-review"
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
           <BlogPostCard
