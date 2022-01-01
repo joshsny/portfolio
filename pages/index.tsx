@@ -49,7 +49,7 @@ export default function Home({ videos }) {
             slug="2021-year-in-review"
             gradient="from-[#D8B4FE] to-[#818CF8]"
           />
-          <BlogPostCard
+          {/* <BlogPostCard
             title="Blog Post 2"
             slug="rust"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
@@ -58,7 +58,7 @@ export default function Home({ videos }) {
             title="Blog Post 3"
             slug="react-state-management"
             gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-          />
+          /> */}
         </div>
         <Link href="/blog">
           <a className="flex h-6 mt-8 leading-7 text-gray-600 transition-all rounded-lg dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200">
@@ -134,7 +134,7 @@ export default function Home({ videos }) {
           </svg>
         </a> */}
         <span className="h-16" />
-        {/* <Subscribe /> */}
+        <Subscribe />
       </div>
     </Container>
   );
