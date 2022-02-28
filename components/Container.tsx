@@ -1,12 +1,11 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-import NextLink from 'next/link';
 import cn from 'classnames';
-
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
+import { useTheme } from 'next-themes';
+import Head from 'next/head';
+import NextLink from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 function NavItem({ href, text }) {
   const router = useRouter();
@@ -38,7 +37,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Joshua Snyder – Developer, writer, creator.',
+    title: 'Joshua Snyder – Web3, Time Management and Open Source.',
     description: `Web3 developer and Typescript enthusiast.`,
     image: 'https://joshua.pl/static/images/banner.png',
     type: 'website',
@@ -75,6 +74,7 @@ export default function Container(props) {
           <div className="ml-[-0.60rem]">
             <MobileMenu />
             <NavItem href="/" text="Home" />
+            <NavItem href="/services" text="Consulting" />
             <NavItem href="/about" text="About" />
             <NavItem href="/dashboard" text="Dashboard" />
             <NavItem href="/blog" text="Blog" />
