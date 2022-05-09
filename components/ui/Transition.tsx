@@ -109,6 +109,7 @@ function Transition({
   ...rest
 }: {
   id?: string;
+  appear?: boolean;
   role?: string;
   children?: React.Element;
   show: boolean;
