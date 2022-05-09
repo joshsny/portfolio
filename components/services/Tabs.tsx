@@ -160,7 +160,7 @@ function Tabs() {
                   <figure className="md:absolute md:inset-y-0 md:right-0 md:w-1/2">
                     <img
                       className="object-cover w-full h-full"
-                      src={require('../images/tabs-image-01.jpg').default}
+                      src={'/images/tabs-image-01.jpg'}
                       width="516"
                       height="387"
                       alt="Tabs 01"
@@ -211,7 +211,7 @@ function Tabs() {
                   <figure className="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
                       className="object-cover w-full h-full"
-                      src={require('../images/hero-image-01.jpg').default}
+                      src={'/images/hero-image-01.jpg'}
                       width="516"
                       height="387"
                       alt="Tabs 02"
@@ -262,7 +262,7 @@ function Tabs() {
                   <figure className="md:absolute md:inset-y-0 md:right-0 md:w-1/2">
                     <img
                       className="object-cover w-full h-full"
-                      src={require('../images/tabs-image-01.jpg').default}
+                      src={'/images/tabs-image-01.jpg'}
                       width="516"
                       height="387"
                       alt="Tabs 01"
@@ -313,7 +313,7 @@ function Tabs() {
                   <figure className="md:absolute md:inset-y-0 md:left-0 md:w-1/2">
                     <img
                       className="object-cover w-full h-full"
-                      src={require('../images/hero-image-01.jpg').default}
+                      src={'/images/hero-image-01.jpg'}
                       width="516"
                       height="387"
                       alt="Tabs 02"
@@ -364,7 +364,7 @@ function Tabs() {
                   <figure className="md:absolute md:inset-y-0 md:right-0 md:w-1/2">
                     <img
                       className="object-cover w-full h-full"
-                      src={require('../images/tabs-image-01.jpg').default}
+                      src={'/images/tabs-image-01.jpg'}
                       width="516"
                       height="387"
                       alt="Tabs 01"
