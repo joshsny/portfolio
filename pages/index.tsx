@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-import Container from '../components/Container';
 import BlogPostCard from '../components/BlogPostCard';
+import Container from '../components/Container';
 import Subscribe from '../components/Subscribe';
-import VideoCard from '../components/VideoCard';
 
 export default function Home({ videos }) {
   return (
@@ -16,18 +14,23 @@ export default function Home({ videos }) {
               Joshua Snyder
             </h1>
             <h2 className="mb-4 text-gray-700 dark:text-gray-200">
-              Chief Technology Officer at{' '}
+              Web3 Developer. Currently working with{' '}
               <a
                 className="font-semibold"
-                href="https://timenavi.com"
-                style={{ color: '#1ba41b' }}
+                href="https://101.xyz"
+                style={{ color: '#ea3370' }}
               >
-                TimeNavi
+                101
               </a>
             </h2>
             <p className="mb-16 text-gray-600 dark:text-gray-400">
-              Web3 and Typescript enthusiast 💙 Learning to build software that
-              people actually need 🔨
+              Web3 and Typescript developer. Working with industry leading
+              startups in the Web3 space to build the future of the web. If you
+              would like to work together, get in{' '}
+              <a href="mailto:joshua@mindful.ai" style={{ color: '#ea3370' }}>
+                touch
+              </a>
+              .
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
