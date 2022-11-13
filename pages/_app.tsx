@@ -4,8 +4,11 @@ import { Inter } from '@next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { SessionProvider } from 'next-auth/react';
 import { ThemeProvider } from 'next-themes';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const interVariable = Inter();
+
+const queryClient = new QueryClient();
 
 export default function App({
   Component,
@@ -13,12 +16,14 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
-      <ThemeProvider attribute="class">
-        <main className={interVariable.className}>
-          <Component {...pageProps} />
-          <Analytics />
-        </main>
-      </ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider attribute="class">
+          <main className={interVariable.className}>
+            <Component {...pageProps} />
+            <Analytics />
+          </main>
+        </ThemeProvider>
+      </QueryClientProvider>
     </SessionProvider>
   );
 }

@@ -1,19 +1,19 @@
-import RSS from 'rss';
-import { sanityClient } from 'lib/sanity-server';
 import { indexQuery } from 'lib/queries';
+import { sanityClient } from 'lib/sanity-server';
+import RSS from 'rss';
 
 export async function getServerSideProps({ res }) {
   const feed = new RSS({
     title: 'Lee Robinson',
-    site_url: 'https://leerob.io',
-    feed_url: 'https://leerob.io/feed.xml'
+    site_url: 'https://joshua.pl',
+    feed_url: 'https://joshua.pl/feed.xml'
   });
 
   const allPosts = await sanityClient.fetch(indexQuery);
   allPosts.map((post) => {
     feed.item({
       title: post.title,
-      url: `https://leerob.io/blog/${post.slug}`,
+      url: `https://joshua.pl/blog/${post.slug}`,
       date: post.date,
       description: post.excerpt
     });

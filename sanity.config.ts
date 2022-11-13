@@ -1,11 +1,11 @@
 import { createConfig } from 'sanity';
-import { deskTool } from 'sanity/desk';
 import { markdownSchema } from 'sanity-plugin-markdown';
+import { deskTool } from 'sanity/desk';
 
 export default createConfig({
   name: 'default',
-  title: 'leerob.io',
-  projectId: '56a8ffnw',
+  title: 'Joshua Snyder',
+  projectId: 'px8myasr',
   dataset: 'production',
   plugins: [deskTool(), markdownSchema()],
   schema: {
