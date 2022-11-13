@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import Container from 'components/Container';
-import BlogPost from 'components/BlogPost';
-import { InferGetStaticPropsType } from 'next';
-import { pick } from 'lib/utils';
 import { allBlogs } from '.contentlayer/data';
+import BlogPost from 'components/BlogPost';
+import Container from 'components/Container';
+import { pick } from 'lib/utils';
+import { InferGetStaticPropsType } from 'next';
 
 export default function Blog({
   posts
@@ -17,14 +17,14 @@ export default function Blog({
   return (
     <Container
       title="Blog – Joshua Snyder"
-      description="Thoughts on Web3 and the future of the web."
+      description="Thoughts on software and the future of the web."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I started writing at the beginning of 2022, mostly about Web3 and the future of the web.
+          {`I started writing at the beginning of 2022, mostly about software and the future of the web.
             In total, I've written ${posts.length} articles on my blog.
             Use the search below to filter by title.`}
         </p>

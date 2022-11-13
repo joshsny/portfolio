@@ -14,19 +14,20 @@ export default function Home({ videos }) {
               Joshua Snyder
             </h1>
             <h2 className="mb-4 text-gray-700 dark:text-gray-200">
-              Web3 Developer. Currently working with{' '}
+              Software Developer.
+              {/* Currently working with{' '}
               <a
                 className="font-semibold"
                 href="https://101.xyz"
                 style={{ color: '#ea3370' }}
               >
                 101
-              </a>
+              </a> */}
             </h2>
             <p className="mb-16 text-gray-600 dark:text-gray-400">
-              Web3 and Typescript developer. Working with industry leading
-              startups in the Web3 space to build the future of the web. If you
-              would like to work together, get in{' '}
+              Full-stack Typescript developer. Working with industry leading
+              startups to build the future of the web. If you would like to work
+              together, get in{' '}
               <a href="mailto:joshua@mindful.ai" style={{ color: '#ea3370' }}>
                 touch
               </a>

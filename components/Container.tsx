@@ -37,8 +37,8 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Joshua Snyder – Web3, Time Management and Open Source.',
-    description: `Web3 developer and Typescript enthusiast.`,
+    title: 'Joshua Snyder – Software Developer',
+    description: `Software developer and Typescript enthusiast.`,
     image: 'https://joshua.pl/static/images/banner.png',
     type: 'website',
     ...customMeta
