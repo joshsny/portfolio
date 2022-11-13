@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import Timeline from '../components/Timeline';
 import Container from 'components/Container';
+import Timeline from '../components/Timeline';
 
 export default function About() {
   return (
@@ -27,7 +27,7 @@ export default function About() {
             .
           </p>
           <p>
-            I write about Web3 and the future of the web in&nbsp;
+            I write about software and the future of the web in&nbsp;
             <Link href="/newsletter">
               <a>my newsletter.</a>
             </Link>
