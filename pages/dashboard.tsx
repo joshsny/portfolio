@@ -1,8 +1,5 @@
-import Link from 'next/link';
-
-import Analytics from 'components/metrics/Analytics';
-import Newsletter from 'components/metrics/Newsletter';
 import Container from 'components/Container';
+import Analytics from 'components/metrics/Analytics';
 import GitHub from 'components/metrics/Github';
 import TopTracks from 'components/TopTracks';
 
@@ -26,10 +23,7 @@ export default function Dashboard() {
           <Analytics />
           <GitHub />
         </div>
-        <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
-          {/* <Newsletter /> */}
-        </div>
-        <h2 className="mt-16 mb-4 text-3xl font-bold tracking-tight text-black dark:text-white">
+        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Top Tracks
         </h2>
         <p className="mb-4 text-gray-600 dark:text-gray-400">

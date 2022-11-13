@@ -1,25 +1,13 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function Document(props) {
   return (
     <Html lang="en">
       <Head>
+        <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
+        <link href="/static/favicons/site.webmanifest" rel="manifest" />
         <link
-          rel="preload"
-          href="/fonts/ibm-plex-sans-var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link href="/favicon.ico" rel="shortcut icon" />
-        <link href="/site.webmanifest" rel="manifest" />
-        <link
-          rel="preconnect"
-          href="https://cdn.usefathom.com"
-          crossOrigin=""
-        />
-        <link
-          href="/apple-touch-icon.png"
+          href="/static/favicons/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
         />
@@ -43,6 +31,10 @@ export default function Document(props) {
         <meta
           content="eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw"
           name="google-site-verification"
+        />
+        <meta
+          content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+          name="robots"
         />
       </Head>
       <body className="text-white bg-white dark:bg-black dark:text-black">

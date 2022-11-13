@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, Suspense } from 'react';
 import { format } from 'date-fns';
 import { signIn, useSession } from 'next-auth/react';
 import useSWR, { useSWRConfig } from 'swr';
@@ -23,7 +23,7 @@ function GuestbookEntry({ entry, user }) {
 
   return (
     <div className="flex flex-col space-y-2">
-      <div className="prose dark:prose-dark w-full">{entry.body}</div>
+      <div className="prose dark:prose-dark w-full break-words">{entry.body}</div>
       <div className="flex items-center space-x-3">
         <p className="text-sm text-gray-500">{entry.created_by}</p>
         <span className=" text-gray-200 dark:text-gray-800">/</span>
@@ -137,9 +137,11 @@ export default function Guestbook({ fallbackData }) {
         )}
       </div>
       <div className="mt-4 space-y-8">
-        {entries?.map((entry) => (
-          <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />
-        ))}
+        <Suspense fallback={null}>
+          {entries?.map((entry) => (
+            <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />
+          ))}
+        </Suspense>
       </div>
     </>
   );

@@ -1,13 +1,11 @@
-import { useState, useRef } from 'react';
-import Link from 'next/link';
+import { useRef, useState } from 'react';
 import useSWR from 'swr';
-import { trackGoal } from 'fathom-client';
 
-import fetcher from 'lib/fetcher';
-import { Form, FormState, Subscribers } from 'lib/types';
-import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';
+import SuccessMessage from 'components/SuccessMessage';
+import fetcher from 'lib/fetcher';
+import { Form, FormState, Subscribers } from 'lib/types';
 
 export default function Subscribe() {
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
@@ -19,13 +17,8 @@ export default function Subscribe() {
     e.preventDefault();
     setForm({ state: Form.Loading });
 
-    const res = await fetch('/api/subscribe', {
-      body: JSON.stringify({
-        email: inputEl.current.value
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      },
+    const email = inputEl.current.value;
+    const res = await fetch(`/api/subscribe?email=${email}`, {
       method: 'POST'
     });
 
@@ -38,7 +31,6 @@ export default function Subscribe() {
       return;
     }
 
-    trackGoal('JYFUFMSF', 0);
     inputEl.current.value = '';
     setForm({
       state: Form.Success,
@@ -81,9 +73,13 @@ export default function Subscribe() {
           {`${
             subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
           } subscribers – `}
-          <Link href="/newsletter">
-            <a>See previous issues</a>
-          </Link>
+          <a
+            href="https://www.getrevue.co/profile/joshsny"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View all issues
+          </a>
         </p>
       )}
     </div>
