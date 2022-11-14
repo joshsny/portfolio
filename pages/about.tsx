@@ -28,9 +28,7 @@ export default function About() {
           </p>
           <p>
             I write about software and the future of the web in&nbsp;
-            <Link href="/newsletter">
-              <a>my newsletter.</a>
-            </Link>
+            <Link href="/newsletter">my newsletter.</Link>
           </p>
           <p>
             I grew up in a rural village in the Lake District, the most
